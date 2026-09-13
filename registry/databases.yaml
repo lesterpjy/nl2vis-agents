@@ -1,0 +1,13 @@
+databases:
+- name: sakila
+  url: sqlite:///registry/data/sakila.db
+  description: 'DVD rental store: films, actors, customers, rentals, payments.'
+  schema_document: schemas/sakila.md
+- name: chinook
+  url: sqlite:///registry/data/chinook.db
+  description: 'Digital music store: artists, albums, tracks, customers, invoices.'
+  schema_document: schemas/chinook.md
+- name: northwind_small
+  url: sqlite:///registry/data/northwind_small.sqlite
+  description: 'Trading company: customers, orders, products, suppliers, employees.'
+  schema_document: schemas/northwind_small.md

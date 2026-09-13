@@ -1,0 +1,31 @@
+{# One User's access: what they hold, what they could be granted, and the way out. #}
+<div class="focus">
+  <h4>{{ subject.name }} <span class="role">{{ subject.role }}</span></h4>
+  {% if subject.role == "admin" %}
+  <p class="muted">Holds every registered database, by role. Nothing to grant or revoke.</p>
+  {% else %}
+  <ul class="plain">
+    {% for db in subject.grants %}
+    <li>{{ db }}
+      <form hx-post="/drawer/grants" hx-target="#focus" class="inline">
+        <input type="hidden" name="user_name" value="{{ subject.name }}"><input type="hidden" name="database" value="{{ db }}">
+        <input type="hidden" name="revoke" value="true"><button class="link danger">revoke</button>
+      </form>
+    </li>
+    {% else %}<li class="muted">holds no databases</li>{% endfor %}
+  </ul>
+  {% if offer %}
+  <form hx-post="/drawer/grants" hx-target="#focus" class="inline">
+    <input type="hidden" name="user_name" value="{{ subject.name }}">
+    <input name="database" list="offer-{{ subject.name }}" placeholder="grant a database…" autocomplete="off" required>
+    <datalist id="offer-{{ subject.name }}">{% for db in offer %}<option value="{{ db }}">{% endfor %}</datalist>
+    <button class="quiet">Grant</button>
+  </form>
+  {% endif %}
+  {% endif %}
+  {% if subject.name != user.name %}
+  <form hx-post="/drawer/users/{{ subject.name }}/remove" hx-target="#focus" hx-confirm="Remove {{ subject.name }} and every grant they hold?" class="inline">
+    <button class="link danger">remove user</button>
+  </form>
+  {% endif %}
+</div>

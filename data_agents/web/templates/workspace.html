@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}Workspace · Data Agents{% endblock %}
+{% block main %}
+<section>
+  <h1>Welcome back, {{ user.name }} 👋</h1>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <p class="muted">Your grants, intersected with what is registered right now. Each one starts a Session: history built on one
+    schema is the wrong context for another, so switching means a new Session.</p>
+  {% if databases %}
+  <ul class="tiles">
+    {% for entry in databases %}
+    <li>
+      <form method="post" action="/workspace/sessions">
+        <input type="hidden" name="database" value="{{ entry.name }}">
+        <button type="submit" class="tile">
+          <strong>{{ entry.name }}</strong>
+          <span class="muted">{{ entry.description or entry.url }}</span>
+        </button>
+      </form>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="error">You have no databases. An admin has to grant you one.</p>
+  {% endif %}
+</section>
+
+<section>
+  <h2>Your sessions</h2>
+  {% if sessions %}
+  <table class="sessions">
+    <thead><tr><th>session</th><th>database</th><th>turns</th><th>started</th><th>last question</th><th></th></tr></thead>
+    <tbody>
+      {% for s in sessions %}
+      <tr>
+        <td><a href="/workspace/sessions/{{ s.id }}">{{ s.id }}</a></td>
+        <td>{{ s.database }}</td><td>{{ s.turns }}</td>
+        <td class="muted">{{ s.created_at.strftime("%d %b %H:%M") }}</td>
+        <td class="muted">{{ s.last_question or "—" }}</td>
+        <td class="actions"><button class="link danger" hx-post="/workspace/sessions/{{ s.id }}/delete" hx-target="closest tr" hx-swap="outerHTML"
+            hx-confirm="Delete session {{ s.id }} and its {{ s.turns }} turn{{ '' if s.turns == 1 else 's' }}? This cannot be undone."
+            title="Delete this session" aria-label="Delete session {{ s.id }}">×</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="muted">None yet.</p>{% endif %}
+</section>
+
+{% if user.role == "admin" %}<aside class="admin"><div id="drawer" hx-get="/drawer" hx-trigger="load"></div></aside>{% endif %}
+{% endblock %}

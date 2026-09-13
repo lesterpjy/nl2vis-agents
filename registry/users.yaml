@@ -1,0 +1,12 @@
+users:
+- name: alice
+  role: analyst
+  grants:
+  - sakila
+  - chinook
+- name: bob
+  role: analyst
+  grants:
+  - northwind_small
+- name: admin
+  role: admin  # holds every registered database by role; grants are for analysts

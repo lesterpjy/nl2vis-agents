@@ -1,0 +1,61 @@
+{# Admin drawer: the Registry, the Users and their Grants, the audit trail. A role check, nothing more. #}
+<h2>Admin</h2>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<h3>Registry</h3>
+<ul class="plain">
+  {% for entry in databases %}
+  <li>
+    <a href="#focus" hx-get="/drawer/databases/{{ entry.name }}" hx-target="#focus"><strong>{{ entry.name }}</strong></a>
+    <span class="muted">{{ entry.url }}</span>
+    <form hx-post="/drawer/databases/{{ entry.name }}/unregister" hx-target="#drawer"><button class="link danger">unregister</button></form>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if found %}
+<h3>On disk, not registered</h3>
+<ul class="plain found">
+  {% for file in found %}
+  <li>
+    <span class="file">{{ file.name }}</span>
+    <form hx-post="/drawer/databases" hx-target="#drawer" hx-indicator="#registering-{{ loop.index }}">
+      <input type="hidden" name="path" value="{{ file }}">
+      <button type="submit" class="quiet">Register</button>
+      <span id="registering-{{ loop.index }}" class="muted htmx-indicator">introspecting, verifying the round trip…</span>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted">One click. A database whose Schema Document is still on file keeps it, and its description, with no model call;
+  anything new is introspected and its document drafted with one call, then verified by the round-trip check before anything is written.</p>
+{% endif %}
+
+<details>
+  <summary>Register something else</summary>
+  <form hx-post="/drawer/databases" hx-target="#drawer" hx-indicator="#registering">
+    <input name="name" placeholder="name" required>
+    <input name="url" placeholder="sqlite:///registry/data/thing.db" required>
+    <input name="description" placeholder="what it holds">
+    <button type="submit">Register</button>
+    <span id="registering" class="muted htmx-indicator">drafting the Schema Document…</span>
+  </form>
+</details>
+
+<h3>Users</h3>
+<div class="row">
+  <input type="search" name="q" placeholder="find a user" hx-get="/drawer/users" hx-target="#users" hx-trigger="input changed delay:200ms, changed from:body">
+  <form hx-post="/drawer/users" hx-target="#focus" class="inline">
+    <input name="name" placeholder="new user" required pattern="[A-Za-z0-9_-]+">
+    <select name="role"><option>analyst</option><option>admin</option></select>
+    <button type="submit" class="quiet">Create</button>
+  </form>
+</div>
+<div id="users" hx-get="/drawer/users" hx-trigger="load"></div>
+<div id="focus"></div>
+<p class="muted">A grant is effective only while the database is registered: unregistering revokes every grant on it. Creating a
+  user records who they are and what they may use; their token is not stored here. To let a new user sign in, add
+  <code>DATA_AGENTS_TOKEN_&lt;NAME&gt;=…</code> to <code>.env</code> and restart the server.</p>
+
+<h3>Recent changes</h3>
+<div id="audit" hx-get="/drawer/audit" hx-trigger="load, changed from:body"></div>

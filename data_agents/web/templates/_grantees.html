@@ -1,0 +1,18 @@
+{# One Database's side: who holds it, and a typeahead over everyone who does not. Revoking is done from the user's side. #}
+<div class="focus">
+  <h4>{{ database }} <span class="muted">· {{ holders | length }} grantee{{ "" if holders | length == 1 else "s" }}</span></h4>
+  <ul class="plain">
+    {% for name in holders %}
+    <li><a href="#focus" hx-get="/drawer/users/{{ name }}" hx-target="#focus">{{ name }}</a></li>
+    {% else %}<li class="muted">no analyst holds it</li>{% endfor %}
+  </ul>
+  <p class="muted">Every admin ({{ admins | join(", ") }}) holds it by role.</p>
+  {% if offer %}
+  <form hx-post="/drawer/grants" hx-target="#focus" class="inline">
+    <input type="hidden" name="database" value="{{ database }}"><input type="hidden" name="side" value="database">
+    <input name="user_name" list="offer-{{ database }}" placeholder="grant to a user…" autocomplete="off" required>
+    <datalist id="offer-{{ database }}">{% for name in offer %}<option value="{{ name }}">{% endfor %}</datalist>
+    <button class="quiet">Grant</button>
+  </form>
+  {% endif %}
+</div>

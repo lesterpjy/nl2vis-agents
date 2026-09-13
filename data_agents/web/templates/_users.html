@@ -1,0 +1,21 @@
+{# One page of Users. Click one to open their access in #focus. #}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<table class="users">
+  <tbody>
+    {% for u in users %}
+    <tr>
+      <td><a href="#focus" hx-get="/drawer/users/{{ u.name }}" hx-target="#focus">{{ u.name }}</a> <span class="role">{{ u.role }}</span></td>
+      <td class="muted">{{ "all databases" if u.role == "admin" else u.grants | join(", ") or "no databases" }}</td>
+    </tr>
+    {% else %}
+    <tr><td class="muted">{{ "no user matches" if q else "no users" }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% if pages > 1 %}
+<p class="pager muted">
+  {% if p > 1 %}<a href="#users" hx-get="/drawer/users?q={{ q | urlencode }}&p={{ p - 1 }}" hx-target="#users">‹ previous</a>{% endif %}
+  page {{ p }} of {{ pages }} · {{ total }} users
+  {% if p < pages %}<a href="#users" hx-get="/drawer/users?q={{ q | urlencode }}&p={{ p + 1 }}" hx-target="#users">next ›</a>{% endif %}
+</p>
+{% endif %}

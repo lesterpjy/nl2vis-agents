@@ -1,0 +1,14 @@
+.env
+.logfire/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+registry/data/
+sessions.db
+registry/system.db*
+.bench/
+certs/*
+!certs/.gitkeep

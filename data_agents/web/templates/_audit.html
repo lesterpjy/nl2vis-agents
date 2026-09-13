@@ -1,0 +1,8 @@
+{# The last twenty lines of the audit trail: who did what to whom, when. #}
+<table class="audit">
+  <tbody>
+    {% for e in entries %}
+    <tr><td class="muted">{{ e.at[:16].replace("T", " ") }}</td><td>{{ e.actor }}</td><td>{{ e.action }}</td><td class="muted">{{ e.user or "" }}{{ " · " if e.user and e.database }}{{ e.database or "" }}</td></tr>
+    {% else %}<tr><td class="muted">nothing yet</td></tr>{% endfor %}
+  </tbody>
+</table>

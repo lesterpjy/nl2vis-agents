@@ -1,0 +1,27 @@
+{# One Turn, live or reopened: the same markup either way. A chart is drawn wherever its Chart Spec was kept. #}
+<article class="turn" id="turn-{{ turn.n }}">
+  <p class="asked"><span class="n">{{ turn.n }}</span>{{ turn.question }}</p>
+  {% if turn.result.narrative is defined %}
+  <p class="narrative">{{ turn.result.narrative }}</p>
+  <p class="intent">intent: {{ turn.result.intent }}</p>
+  {# The chart this Turn drew, from the Chart Spec it kept. A Turn that kept none shows its table, and nothing makes one up. #}
+  {% if charts.get(turn.n) %}<div class="chart" data-spec='{{ charts[turn.n] | tojson }}'></div>{% endif %}
+  <details><summary>SQL</summary><pre class="sql">{{ turn.result.sql }}</pre></details>
+  <details><summary>{{ turn.result.table.rows | length }} row{{ "" if turn.result.table.rows | length == 1 else "s" }}{{ " (capped)" if turn.result.table.truncated }}</summary>
+    <div class="scroll">
+      <table class="result">
+        <thead><tr>{% for c in turn.result.table.columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for row in turn.result.table.rows[:15] %}<tr>{% for v in row %}<td>{{ v if v is not none else "—" }}</td>{% endfor %}</tr>{% endfor %}
+        </tbody>
+      </table>
+      {% if turn.result.table.rows | length > 15 %}<p class="muted">showing 15</p>{% endif %}
+    </div>
+  </details>
+  {% elif turn.result.question is defined %}
+  <p class="clarify"><strong>Clarification</strong>{{ turn.result.question }}</p>
+  <p class="muted">Answer it in the box below; the answer continues this Session.</p>
+  {% else %}
+  <p class="refused"><strong>Not answerable from this database</strong>{{ turn.result.reason }}</p>
+  {% endif %}
+</article>

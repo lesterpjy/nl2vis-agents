@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block title %}{{ session.database }} · {{ session.id }}{% endblock %}
+{% block head %}
+<script src="/static/vega.min.js"></script>
+<script src="/static/vega-lite.min.js"></script>
+<script src="/static/vega-embed.min.js"></script>
+{% endblock %}
+{% block main %}
+<section class="session" data-session="{{ session.id }}">
+  <h1>{{ session.database }}<span class="muted"> · session {{ session.id }}</span></h1>
+  {% if description %}<p>{{ description }}</p>{% endif %}
+  {% if tables %}
+  <details class="schema">
+    <summary>{{ tables | length }} tables — what this database can answer about</summary>
+    <ul class="plain">{% for name, columns in tables %}<li><strong>{{ name }}</strong> <span class="muted">{{ columns }}</span></li>{% endfor %}</ul>
+  </details>
+  {% endif %}
+  <p><a class="link" href="/workspace">← workspace</a></p>
+
+  <div id="cards">{% for turn in turns %}{% include "_card.html" %}{% endfor %}</div>
+
+  <form id="ask" autocomplete="off">
+    <textarea id="question" name="question" rows="2" required placeholder="Ask a question about {{ session.database }}…"></textarea>
+    <p id="tab-hint" class="muted" hidden>Tab to accept the suggestion</p>
+    <div class="row">
+      <label><input type="checkbox" id="chart" checked> chart it</label>
+      <label>chart type
+        <select id="chart_type">
+          <option value="">the agent decides</option>
+          {% for t in ["bar", "line", "area", "point", "histogram", "heatmap", "pie"] %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+        </select>
+      </label>
+      <label>order
+        <select id="sort">
+          <option value="">house default</option>
+          {% for s in ["measure desc", "measure asc", "category asc", "category desc"] %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+        </select>
+      </label>
+      <button type="submit" id="send">Ask</button>
+    </div>
+  </form>
+
+  <pre id="progress" hidden></pre>
+</section>
+
+{% if user.role == "admin" %}
+<aside class="admin">{# the drawer belongs to the workspace; here an admin gets only what this Turn cost #}
+  <h3>This turn</h3>
+  <p class="muted">Latency per stage, model round trips, tokens and cost, read off this Turn's own event stream as it runs.</p>
+  <pre id="trace" class="muted">ask something and this fills in</pre>
+</aside>
+{% endif %}
+{% endblock %}
+{% block scripts %}<script src="/static/app.js"></script>{% endblock %}

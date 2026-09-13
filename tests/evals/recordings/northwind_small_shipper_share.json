@@ -1,0 +1,136 @@
+{
+ "analysis": [
+  {
+   "parts": [
+    {
+     "tool_name": "run_sql",
+     "args": "{\"sql\":\"SELECT s.CompanyName, COUNT(o.Id) AS OrderCount, ROUND(100.0 * COUNT(o.Id) / (SELECT COUNT(*) FROM \\\"Order\\\"), 2) AS Percentage\\nFROM Shipper s\\nLEFT JOIN \\\"Order\\\" o ON s.Id = o.ShipVia\\nGROUP BY s.CompanyName\\nORDER BY Percentage DESC;\"}",
+     "tool_call_id": "call_Qbmxbjf3Dc0U2KE1pQz2R9c8",
+     "tool_kind": null,
+     "id": "fc_0154c8f5d478384a016aa6b363584887d0bb967e409f31f018",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4076,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 84,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.008824",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-2025-04-14",
+   "timestamp": "2026-09-13T14:29:55.795300Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:29:54Z"
+   },
+   "provider_response_id": "resp_0154c8f5d478384a016aa6b362bd9887d08eb310f0b0ba1182",
+   "finish_reason": "stop",
+   "run_id": "01a09b2c-b7c5-70dc-a82c-4fb424cbdeb6",
+   "conversation_id": "01a09b2c-b7c5-70dc-a82c-4fb5b6d38d65",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result_finish_analysis",
+     "args": "{\"intent\":\"share\",\"sql\":\"SELECT s.CompanyName, COUNT(o.Id) AS OrderCount, ROUND(100.0 * COUNT(o.Id) / (SELECT COUNT(*) FROM \\\"Order\\\"), 2) AS Percentage\\nFROM Shipper s\\nLEFT JOIN \\\"Order\\\" o ON s.Id = o.ShipVia\\nGROUP BY s.CompanyName\\nORDER BY Percentage DESC;\",\"narrative\":\"United Package handled the largest share of orders, with 39.28% of all orders. Federal Shipping managed 30.72% of orders, while Speedy Express handled 30.00%. This shows that order distribution among the three shippers is relatively balanced, with United Package having a slight lead.\"}",
+     "tool_call_id": "call_t1LPh1cAuoqnwGVsfGBkFfkj",
+     "tool_kind": null,
+     "id": "fc_04f78aa2f2ebae0f016aa6b364b42487d0aa179cb0343169df",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4216,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 157,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.009688",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-2025-04-14",
+   "timestamp": "2026-09-13T14:29:57.437817Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:29:56Z"
+   },
+   "provider_response_id": "resp_04f78aa2f2ebae0f016aa6b364232087d0b1fa7d7cebc5c720",
+   "finish_reason": "stop",
+   "run_id": "01a09b2c-b7c5-70dc-a82c-4fb424cbdeb6",
+   "conversation_id": "01a09b2c-b7c5-70dc-a82c-4fb5b6d38d65",
+   "metadata": null,
+   "state": "complete"
+  }
+ ],
+ "visualization": [
+  {
+   "parts": [
+    {
+     "tool_name": "final_result_ChartSpec",
+     "args": "{\"chart_type\":\"bar\",\"x\":\"CompanyName\",\"y\":\"Percentage\",\"title\":\"Percentage of orders handled by each shipper\",\"subtitle\":\"Share of total orders by shipper\",\"annotations\":[]}",
+     "tool_call_id": "call_DHGaK9zZdeHJGo1yMk37681U",
+     "tool_kind": null,
+     "id": "fc_005e95dc05618257016aa6b366751c87d0ba4d71b8844ea85e",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 1291,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 52,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0005996",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:29:58.864471Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:29:58Z"
+   },
+   "provider_response_id": "resp_005e95dc05618257016aa6b365ffd487d09a8003d5192217c8",
+   "finish_reason": "stop",
+   "run_id": "01a09b2c-c454-7016-9263-2b3f9b3997d0",
+   "conversation_id": "01a09b2c-c454-7016-9263-2b400b9e5fef",
+   "metadata": null,
+   "state": "complete"
+  }
+ ],
+ "router": []
+}

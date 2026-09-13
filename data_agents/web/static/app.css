@@ -1,0 +1,102 @@
+/* The House Style, applied to the page so the chart and what surrounds it agree. Values mirror house_style.py. */
+:root {
+  color-scheme: light;  /* the House Style is a light theme; without this the browser's auto-dark inverts it */
+  --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #9a9891;
+  --grid: #e8e7e3; --blue: #2a78d6; --orange: #eb6834; --green: #1baf7a;
+}
+* { box-sizing: border-box; }
+html { background: var(--surface); }
+body { margin: 0; background: var(--surface); color: var(--ink); font: 14px/1.55 Helvetica, Arial, sans-serif; }
+header {
+  display: flex; align-items: center; gap: 14px; padding: 12px 28px; border-bottom: 1px solid var(--grid);
+  position: sticky; top: 0; background: var(--surface); z-index: 2;
+}
+.brand { font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+.who { margin-left: auto; color: var(--ink-2); }
+.role { margin-left: 6px; padding: 1px 6px; border: 1px solid var(--grid); border-radius: 9px; font-size: 11px; color: var(--ink-3); }
+main { max-width: 860px; margin: 0 auto; padding: 28px; }
+h1 { font-size: 21px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; }
+h2 { font-size: 15px; font-weight: 600; margin: 32px 0 8px; }
+h3 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin: 20px 0 8px; }
+p { margin: 6px 0; }
+.muted { color: var(--ink-3); }
+.error { color: var(--orange); }
+a { color: var(--blue); }
+
+button, input, select, textarea { font: inherit; color: var(--ink); }
+button { padding: 7px 14px; border: 0; border-radius: 7px; background: var(--blue); color: #fff; cursor: pointer; }
+button:disabled { opacity: 0.45; cursor: progress; }
+button.link { background: none; color: var(--blue); padding: 0; }
+button.quiet { background: none; color: var(--blue); border: 1px solid var(--grid); padding: 4px 11px; font-size: 12px; border-radius: 6px; }
+button.quiet:hover { border-color: var(--blue); background: #f1f6fd; }
+button.link.danger { color: var(--orange); }
+input, select, textarea { padding: 7px 9px; border: 1px solid var(--grid); border-radius: 7px; background: #fff; }
+textarea { width: 100%; resize: vertical; }
+label { color: var(--ink-2); }
+form { display: inline; }
+
+.card.narrow { max-width: 420px; }
+.card.narrow input { width: 100%; margin: 4px 0 12px; }
+.tiles, .plain { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.plain { flex-direction: column; gap: 6px; }
+.tile {
+  display: flex; flex-direction: column; gap: 2px; align-items: flex-start; min-width: 200px; text-align: left;
+  padding: 13px 15px; background: #fff; border: 1px solid var(--grid); color: var(--ink);
+}
+.tile:hover { border-color: var(--blue); }
+.tile .muted { font-size: 12px; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 5px 10px 5px 0; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { font-weight: 600; font-size: 12px; color: var(--ink-2); }
+.result td { font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.actions { text-align: right; padding-right: 0; white-space: nowrap; }
+td.actions button { font-size: 16px; line-height: 1; color: var(--ink-3); }
+td.actions button:hover { color: var(--orange); }
+.scroll { overflow-x: auto; }
+
+#cards { display: flex; flex-direction: column; gap: 18px; margin: 22px 0; }
+details.schema { margin: 4px 0 10px; }
+details.schema li { padding: 1px 0; }
+.turn { padding: 16px 18px; background: #fff; border: 1px solid var(--grid); border-radius: 10px; }
+.asked { font-weight: 600; margin: 0 0 10px; }
+.asked .n { display: inline-block; min-width: 20px; color: var(--ink-3); font-weight: 400; }
+.narrative { margin: 0 0 4px; }
+.intent { margin: 0 0 12px; font-size: 12px; color: var(--ink-3); }
+.clarify, .refused { padding: 10px 12px; border-radius: 8px; background: #fdf6ec; }
+.refused { background: #fdefea; }
+.clarify strong, .refused strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
+.chart:not(:empty) { margin: 4px 0 14px; }
+summary { cursor: pointer; color: var(--ink-2); font-size: 12px; }
+.sql { margin: 8px 0; padding: 10px 12px; background: #f6f6f4; border-radius: 7px; overflow-x: auto; font-size: 12px; color: var(--ink-2); }
+
+#ask { display: block; }
+.found li { display: flex; align-items: baseline; gap: 10px; }
+.found .file { font-weight: 600; }
+#tab-hint { margin: 4px 0 0; font-size: 12px; }
+#ask .row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+#progress {
+  margin-top: 14px; padding: 11px 13px; max-height: 190px; overflow-y: auto; background: #f6f6f4;
+  border-radius: 7px; font-size: 12px; color: var(--ink-2); white-space: pre-wrap;
+}
+
+aside.admin { max-width: 860px; margin: 40px auto 0; padding: 18px 28px 28px; border-top: 1px solid var(--grid); }
+aside.admin h2 { margin-top: 0; }
+aside.admin input, aside.admin select, aside.admin textarea { margin: 0 6px 6px 0; vertical-align: middle; }
+select {  /* the native arrow sits on the border; drawn here instead, so it keeps its distance from the edge */
+  appearance: none; -webkit-appearance: none; padding-right: 26px;
+  background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' fill='none' stroke='%2352514e' stroke-width='1.5'/></svg>") no-repeat right 10px center;
+}
+.inline { display: inline; }
+aside.admin .row { display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+aside.admin .row form { display: flex; align-items: center; }
+.users td:first-child { white-space: nowrap; }
+.pager { font-size: 12px; }
+.pager a { margin: 0 8px; }
+.focus { margin: 10px 0; padding: 12px 14px; background: #fff; border: 1px solid var(--grid); border-radius: 8px; }
+.focus h4 { margin: 0 0 6px; font-size: 14px; }
+.focus li { display: flex; gap: 10px; align-items: baseline; }
+.audit td { font-size: 12px; }
+.htmx-indicator { display: none; }
+.htmx-request .htmx-indicator, .htmx-request.htmx-indicator { display: inline; }
+#trace { white-space: pre-wrap; font-size: 12px; }

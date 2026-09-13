@@ -1,0 +1,49 @@
+{
+ "analysis": [
+  {
+   "parts": [
+    {
+     "tool_name": "final_result_Unanswerable",
+     "args": "{\"reason\":\"The schema does not contain any information about film directors. There is no column or table for directors in the database.\"}",
+     "tool_call_id": "call_0MaxEZ47D3UUw3y8pmQ6iT1X",
+     "tool_kind": null,
+     "id": "fc_08282375a6cdeb92016aa6b39b5f8c87d0b314a4941dbfa378",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3863,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 40,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.008046",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-2025-04-14",
+   "timestamp": "2026-09-13T14:30:51.762969Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:30:51Z"
+   },
+   "provider_response_id": "resp_08282375a6cdeb92016aa6b39afe6887d09bfdecb2a2c4543c",
+   "finish_reason": "stop",
+   "run_id": "01a09b2d-93dc-75c7-9464-70d865b4a738",
+   "conversation_id": "01a09b2d-93dc-75c7-9464-70d9ebf63fd6",
+   "metadata": null,
+   "state": "complete"
+  }
+ ],
+ "visualization": [],
+ "router": []
+}

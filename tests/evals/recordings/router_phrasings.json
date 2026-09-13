@@ -1,0 +1,1294 @@
+{
+ "router": [
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_em5jwbEpQY9gBHblk5vpFJwn",
+     "tool_kind": null,
+     "id": "fc_0629af480ae79d30016aa6b3b6df6c87d096b726725ecbbd78",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:18.952523Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:18Z"
+   },
+   "provider_response_id": "resp_0629af480ae79d30016aa6b3b6827487d0ad4c484015a10e4e",
+   "finish_reason": "stop",
+   "run_id": "01a09b2d-ff66-745a-8eef-ed5011a73348",
+   "conversation_id": "01a09b2d-ff67-7721-b2d8-b58c6b69fb74",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_n9UnPv0Ttl9t8UbM8OigsSxk",
+     "tool_kind": null,
+     "id": "fc_0b9d5a23c28f6f45016aa6b3b7c2dc87d0b430a119dd865f05",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 242,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001080",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:19.854953Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:19Z"
+   },
+   "provider_response_id": "resp_0b9d5a23c28f6f45016aa6b3b7594087d0b8edd7632f50ea21",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-02ad-71b7-b47d-33500450a1b0",
+   "conversation_id": "01a09b2e-02ad-71b7-b47d-3351db8fb043",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_eKkRU2eFRvMlSwg46SeUMI0u",
+     "tool_kind": null,
+     "id": "fc_05bdafbf2df5e8c4016aa6b3b8a0fc87d0a8aa7f38cd53c526",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 247,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001100",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:20.731312Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:20Z"
+   },
+   "provider_response_id": "resp_05bdafbf2df5e8c4016aa6b3b834a887d088736c59f6888588",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-0635-7487-8fb2-21d74ded8de5",
+   "conversation_id": "01a09b2e-0635-7487-8fb2-21d839c3422b",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_fOSU4c3wAVDhCHWMauUZAAb3",
+     "tool_kind": null,
+     "id": "fc_005738aa64ff6725016aa6b3b9945887d09cc9b9f63bef8a75",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:21.676460Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:21Z"
+   },
+   "provider_response_id": "resp_005738aa64ff6725016aa6b3b90c8087d0bf9802aaa9ab449a",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-09a2-764a-8c15-0ae394ac7d9d",
+   "conversation_id": "01a09b2e-09a2-764a-8c15-0ae46ad67e37",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_nYnTIXiCRQUoCyfEg78Mvu2s",
+     "tool_kind": null,
+     "id": "fc_0074f9ad41fb916c016aa6b3ba620887d0b1cefdafb0f2d8f9",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 241,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001076",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:22.458433Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:22Z"
+   },
+   "provider_response_id": "resp_0074f9ad41fb916c016aa6b3ba027487d09d3ffa080f7f9709",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-0d52-76b0-9168-f6dffb223d0e",
+   "conversation_id": "01a09b2e-0d52-76b0-9168-f6e0d336f345",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_gbLuAU1O5452vLhKYfq4O0Kx",
+     "tool_kind": null,
+     "id": "fc_0201781d106edc18016aa6b3bb31dc87d09f66caacc3a29d77",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:23.253981Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:22Z"
+   },
+   "provider_response_id": "resp_0201781d106edc18016aa6b3bad09087d08ee06b8868adc699",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-1060-725f-83c5-da61e659c86f",
+   "conversation_id": "01a09b2e-1060-725f-83c5-da6210e6ef95",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_Z1hFs7539lXQe4l0vnaqCm22",
+     "tool_kind": null,
+     "id": "fc_0ceb83c018b69a8e016aa6b3bbfe7c87d09afeaa1e1c5b709b",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 247,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001100",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:24.088062Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:23Z"
+   },
+   "provider_response_id": "resp_0ceb83c018b69a8e016aa6b3bb9a8887d0b01bd61934ab30c9",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-137e-75ba-a445-6184668bed8f",
+   "conversation_id": "01a09b2e-137e-75ba-a445-6185c68b4565",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_sbzlBbx2QchP9OVAOeTQQV1L",
+     "tool_kind": null,
+     "id": "fc_03969dc6dae3de52016aa6b3bcee0c87d0883152dc487f4d6f",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:25.257865Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:24Z"
+   },
+   "provider_response_id": "resp_03969dc6dae3de52016aa6b3bc689087d08463e96a4c289a31",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-16bd-7035-aea6-4ccd72d2a46b",
+   "conversation_id": "01a09b2e-16bd-7035-aea6-4cce0311c328",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_f2AQeiOwW1tGwJVh64vfSZQN",
+     "tool_kind": null,
+     "id": "fc_0664965e892196fe016aa6b3bdd8e487d08640d770d2cc0cb5",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:25.893417Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:25Z"
+   },
+   "provider_response_id": "resp_0664965e892196fe016aa6b3bd945087d086a0a3cc66b571d4",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-1b50-7275-874f-f41edb2631a3",
+   "conversation_id": "01a09b2e-1b50-7275-874f-f41f584143bd",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_7QgIxAvP1103unbFilV4bloZ",
+     "tool_kind": null,
+     "id": "fc_043f00528a52df19016aa6b3be873487d0b17c051e40c8ed92",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:26.591207Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:26Z"
+   },
+   "provider_response_id": "resp_043f00528a52df19016aa6b3be390c87d0b152e75a9b09529f",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-1dcb-7350-af43-506ff5fef084",
+   "conversation_id": "01a09b2e-1dcb-7350-af43-50702e992c68",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_H77V7OaqsXLoXFmrpsxYxgoh",
+     "tool_kind": null,
+     "id": "fc_0870310a411c4c34016aa6b3bf573887d0b82ee761aa540763",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:27.357897Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:26Z"
+   },
+   "provider_response_id": "resp_0870310a411c4c34016aa6b3beec3087d0b4436d0824f05b86",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-2088-7171-a951-fcd0d4aa49b9",
+   "conversation_id": "01a09b2e-2088-7171-a951-fcd15a6fb544",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_ZgJMf2ZwsynpEptBCg8SD2I6",
+     "tool_kind": null,
+     "id": "fc_03485f404ce996e1016aa6b3c0134887d0af44b363f89e7593",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 245,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001092",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:28.142595Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:27Z"
+   },
+   "provider_response_id": "resp_03485f404ce996e1016aa6b3bfb5a087d0bc68c0d51cccb12f",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-2383-7383-a66a-0747a62ce9b4",
+   "conversation_id": "01a09b2e-2383-7383-a66a-074804157b2b",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_EHHyEf00Q4Lr2QtdLYem1YIY",
+     "tool_kind": null,
+     "id": "fc_0f2526926a9e3016016aa6b3c0e9b087d0a881d247c039ca2d",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:29.112475Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:28Z"
+   },
+   "provider_response_id": "resp_0f2526926a9e3016016aa6b3c07bd087d09b8bcff5a62f9069",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-2694-72c2-86a8-fbb4f473becf",
+   "conversation_id": "01a09b2e-2694-72c2-86a8-fbb50a051ac0",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_nYBHIzirvL8WGEQP9mxeUf8d",
+     "tool_kind": null,
+     "id": "fc_01912ca2bf04264d016aa6b3c1bff487d08f7d0be3881ab648",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:29.821467Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:29Z"
+   },
+   "provider_response_id": "resp_01912ca2bf04264d016aa6b3c170a487d082c35d8fe52ad5c4",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-2a5f-7382-9d99-dd162fc8c5dd",
+   "conversation_id": "01a09b2e-2a5f-7382-9d99-dd179eae7bd6",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"present_only\"}",
+     "tool_call_id": "call_mYjp3hzbIiR37JPKlHjh2fEc",
+     "tool_kind": null,
+     "id": "fc_0c139ca79e23fe17016aa6b3c306e087d0b4aefff08201a9f5",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 240,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001072",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:31.281711Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:30Z"
+   },
+   "provider_response_id": "resp_0c139ca79e23fe17016aa6b3c2732887d0833dde5416f80423",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-2d24-72dc-b0e5-b46a20788486",
+   "conversation_id": "01a09b2e-2d24-72dc-b0e5-b46bb673c534",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_H4epkmuCrTb9NuZ1scoGnujj",
+     "tool_kind": null,
+     "id": "fc_07e97a500bf209d4016aa6b3c42a5c87d0944fe7d78c7652cf",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 240,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001072",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:32.194225Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:31Z"
+   },
+   "provider_response_id": "resp_07e97a500bf209d4016aa6b3c3adc887d09e08618fc2645b78",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-32d7-75f5-be51-c3335ca2158f",
+   "conversation_id": "01a09b2e-32d7-75f5-be51-c33433184f3d",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_Gr4IXVy4wXO4ss0xSJM4dSgD",
+     "tool_kind": null,
+     "id": "fc_0e666e8b1f9b5987016aa6b3c4f70887d08813e7969889d4ed",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 242,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001080",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:33.034142Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:32Z"
+   },
+   "provider_response_id": "resp_0e666e8b1f9b5987016aa6b3c48a5887d09c63839cd0928101",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-3669-76b4-af6f-324683f77ee3",
+   "conversation_id": "01a09b2e-3669-76b4-af6f-32470d4955a0",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_7EtUAt8GOscr0h4vVYvgvfSC",
+     "tool_kind": null,
+     "id": "fc_009916534bfcd991016aa6b3c5bb6c87d0a9451efc27a887db",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:33.804916Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:33Z"
+   },
+   "provider_response_id": "resp_009916534bfcd991016aa6b3c559a887d0a2803fdc02e63bc7",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-39b1-70f8-8749-2aa1198f6278",
+   "conversation_id": "01a09b2e-39b1-70f8-8749-2aa24ead8a79",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_PEZicEPYdlx2VDy1UTOPGNAD",
+     "tool_kind": null,
+     "id": "fc_0e88567c55585b10016aa6b3c6862487d097eb886e56c66435",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 242,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001080",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:34.600302Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:34Z"
+   },
+   "provider_response_id": "resp_0e88567c55585b10016aa6b3c629e487d0935b009303ccf3b6",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-3cb3-777f-b01f-628ee8c46439",
+   "conversation_id": "01a09b2e-3cb3-777f-b01f-628f3d77b9a5",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_izmZx6a2m3uYbOiKwSQQf1zu",
+     "tool_kind": null,
+     "id": "fc_01749eac9a71a947016aa6b3c763b887d0ad7630ad0317fccc",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 248,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001104",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:35.473736Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:34Z"
+   },
+   "provider_response_id": "resp_01749eac9a71a947016aa6b3c6ec2887d087e3179cbffeae8a",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-3fce-74a1-87f2-9b3f524e2b16",
+   "conversation_id": "01a09b2e-3fce-74a1-87f2-9b405d6639e1",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_ap6YC3scR6Lv7jmpZSidw0mh",
+     "tool_kind": null,
+     "id": "fc_047e3a56764dece1016aa6b3c8493887d0b716e4fb321cf774",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:36.379096Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:35Z"
+   },
+   "provider_response_id": "resp_047e3a56764dece1016aa6b3c7d33087d0953199027632faec",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-4339-7640-9fb3-579303565f68",
+   "conversation_id": "01a09b2e-4339-7640-9fb3-5794ce7c2be7",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_sDgyfXTPDpCD2FH5hlZoNGDS",
+     "tool_kind": null,
+     "id": "fc_05a1aa47b6259300016aa6b3c91b7c87d0bc8f8946d5ab2e68",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 242,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001080",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:37.178516Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:36Z"
+   },
+   "provider_response_id": "resp_05a1aa47b6259300016aa6b3c8b58c87d08a738cc6ccb30956",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-46c1-7339-901f-f48e9e37cf94",
+   "conversation_id": "01a09b2e-46c1-7339-901f-f48fb7e68bda",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_laeob78D6Wjao3MU7IEAinJO",
+     "tool_kind": null,
+     "id": "fc_087e46c8d1f3c078016aa6b3c9e5e887d08ce74b7ac490592c",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:37.961647Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:37Z"
+   },
+   "provider_response_id": "resp_087e46c8d1f3c078016aa6b3c9848c87d098af89311472e59a",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-49e0-77c1-bad2-9e113f0ddd40",
+   "conversation_id": "01a09b2e-49e0-77c1-bad2-9e12ce209366",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_sGIYrzPYbiOhFSGU8ihyut3I",
+     "tool_kind": null,
+     "id": "fc_0a56665e215f60ef016aa6b3cab2dc87d087d47de07da7dea1",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 246,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001096",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:38.809646Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:38Z"
+   },
+   "provider_response_id": "resp_0a56665e215f60ef016aa6b3ca496c87d09f37c6eba4ca7c94",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-4cef-760b-998a-65c5e664f5dd",
+   "conversation_id": "01a09b2e-4cef-760b-998a-65c665c89bbd",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_GY9HIFXMNcMYkkKENsmoLxfn",
+     "tool_kind": null,
+     "id": "fc_05899617f1c0c098016aa6b3cb8f8487d091258fe96d53d227",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 243,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001084",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:39.702705Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:39Z"
+   },
+   "provider_response_id": "resp_05899617f1c0c098016aa6b3cb2a8487d09ce9d654e64ee630",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-503f-7676-b7ee-3e4287fb958a",
+   "conversation_id": "01a09b2e-503f-7676-b7ee-3e438e8b3447",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_UQti5Uc8C5nNokSQyxiFzWtK",
+     "tool_kind": null,
+     "id": "fc_05992821b6439caa016aa6b3cc5c7487d0a1ad39dcea306289",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 245,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001092",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:40.410316Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:40Z"
+   },
+   "provider_response_id": "resp_05992821b6439caa016aa6b3cc0cd487d0813125c01544b0ab",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-53be-737b-88af-4a8aeaf30244",
+   "conversation_id": "01a09b2e-53be-737b-88af-4a8b26c8e382",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_VD3Bv8WArN2c6ACcvAjZ4CRz",
+     "tool_kind": null,
+     "id": "fc_05966c8a3092cc69016aa6b3cd14c887d0b1876ec8112312be",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 245,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001092",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:41.195022Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:40Z"
+   },
+   "provider_response_id": "resp_05966c8a3092cc69016aa6b3ccb99487d08643c08d2198c01a",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-5680-70e2-8763-258503d0867f",
+   "conversation_id": "01a09b2e-5680-70e2-8763-258608a28899",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_JSvrM1fA9Qk9OEj6qDjsdXUX",
+     "tool_kind": null,
+     "id": "fc_02e3c45508bb8276016aa6b3cdf80887d0a1ab9bebe5ea22d5",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 246,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001096",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:42.047006Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:41Z"
+   },
+   "provider_response_id": "resp_02e3c45508bb8276016aa6b3cd929887d0bac5811eda76c2b4",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-5992-7433-9f24-914f73028327",
+   "conversation_id": "01a09b2e-5992-7433-9f24-91500c416805",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_2j9fEQwPRsG9cSYeRmJMRqLB",
+     "tool_kind": null,
+     "id": "fc_064a6e4af6a9449a016aa6b3ced14887d0b4231051e4fac569",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 242,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001080",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:42.897456Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:42Z"
+   },
+   "provider_response_id": "resp_064a6e4af6a9449a016aa6b3ce663887d0a8315ec7c4ad80b5",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-5ce3-777a-9bc8-4ff23b109aef",
+   "conversation_id": "01a09b2e-5ce3-777a-9bc8-4ff3ede0eb8c",
+   "metadata": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"response\":\"new_analysis\"}",
+     "tool_call_id": "call_C1CoqBKlcnBOk7uRGNV4NFUB",
+     "tool_kind": null,
+     "id": "fc_09796b4c096d69e4016aa6b3cfa1bc87d0add1cf848e65cda2",
+     "provider_name": "openai",
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 244,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+     "reasoning_tokens": 0
+    },
+    "cost": "0.0001088",
+    "output_reasoning_tokens": 0
+   },
+   "model_name": "gpt-4.1-mini-2025-04-14",
+   "timestamp": "2026-09-13T14:31:43.732632Z",
+   "kind": "response",
+   "provider_name": "openai",
+   "provider_url": "https://api.openai.com/v1/",
+   "provider_details": {
+    "finish_reason": "completed",
+    "timestamp": "2026-09-13T14:31:43Z"
+   },
+   "provider_response_id": "resp_09796b4c096d69e4016aa6b3cf372c87d0b6307e6daabe3037",
+   "finish_reason": "stop",
+   "run_id": "01a09b2e-6037-769a-b21c-a44abf6ceaa1",
+   "conversation_id": "01a09b2e-6037-769a-b21c-a44b402d1dfb",
+   "metadata": null,
+   "state": "complete"
+  }
+ ]
+}
