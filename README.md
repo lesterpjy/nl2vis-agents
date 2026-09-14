@@ -157,13 +157,14 @@ The rules are published ones: `ex` is BIRD's evaluator verbatim, `correct` the s
 agent's columns onto the gold's, and `chart`, `data` and `order` are VisEval's own checks ported verbatim
 (MIT), fed from the Vega-Lite we build. `reads` is ours.
 
-### Held out: the committed 250-case draw, leaving 650 cases never looked at
+### Held out: the committed 250-case draw of the held-out 900
 
 | condition | `ex` | `correct` | `chart` | `data` | `order` | `reads` | asked |
 |---|---|---|---|---|---|---|---|
 | first pass | 57% | 77% | 83% | 73% | 75% | 88% | 26/250 |
 | after the reply | 61% | 81% | 90% | 80% | 82% | 98% | |
 
+Both live held-out runs were spent on this one committed draw, so 650 of the 900 have never been run live.
 `ex` and `correct` are over the 209 cases whose gold executes, `order` over the 115 that ask for one. An
 earlier run on the identical 250, before the eight checks existed and asking nothing, scored 62 / 82 / 92 /
 82 / 85 / 99; paired case by case the two differ on 13 of 209 for `correct`. The checks buy a question the
@@ -175,13 +176,14 @@ Caveats that belong beside those numbers:
   data. Paired over 100 cases they moved `correct` by nothing.
 * `chart` is VisEval's own name match, so the pies the House Style refuses above three parts count as misses.
 * 148 cases bin their x axis, which is not SQL, so they ship no runnable gold and are scored on `data` alone.
-* A `--dry` sweep charts the ground truth's own table with its own channels (91 / 99 / 99 over all 1,150):
-  ceilings on the renderer, not scores for the system. `--split all` is a superset of dev, not held out.
+* A `--dry` sweep charts the ground truth's own table with its own channels (91 / 99 / 99 over all 1,150).
+  Those are ceilings on the renderer, not scores for the system, and the sweep has seen every held-out table,
+  so a dry run over a test split is not a held-out number either. `--split all` is a superset of dev.
 * No number of the paper's is quoted or compared against: different populations, different databases, and
   *invalid* means something else for a system that hands over a typed spec.
 
-Over 650 live cases a Turn takes a median 4.3 s and 3 model round trips, and costs under a cent. Provider
-round trips are 90% or more of that; the guard, the eight twins and the renderer run in under 200 ms.
+Over the held-out 250 a Turn takes a median 4.4 s and 3 model round trips, and costs under a cent. Provider
+round trips are 90% of that; the guard and its eight twins together cost 6 ms.
 
 ## HTTPS
 
